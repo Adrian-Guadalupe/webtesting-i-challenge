@@ -19,7 +19,7 @@ function fail(item) {
   } else if (item.enhancement === 15 || 16) {
     return { ...item, durability: item.durability - 10 }
   } else if (item.enhancement > 16) {
-    return { ...item, durability: item.durability - 1 }
+    return { ...item, durability: item.enhancement - 1 }
   }
 }
 
